@@ -17,6 +17,7 @@ handler.on('push', function (event) {
   console.log('Received a push event for %s to %s',
     event.payload.repository.name,
     event.payload.ref)
+  console.log("EVENT Payload : " + JSON.stringify(event))
 })
 
 handler.on('', function (event) {
